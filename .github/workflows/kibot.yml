@@ -34,8 +34,8 @@ jobs:
         with:
           config: hwboard.kibot.yaml
           dir: output
-          schema: 'hwboard-bike-computer.kicad_sch'
-          board: 'hwboard-bike-computer.kicad_pcb'
+          schema: 'PCB/hwboard-bike-computer.kicad_sch'
+          board: 'PCB/hwboard-bike-computer.kicad_pcb'
           skip: run_erc,run_drc
           verbose: 2
       

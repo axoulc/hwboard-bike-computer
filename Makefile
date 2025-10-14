@@ -7,8 +7,8 @@ KIBOT = kibot
 OUTPUT_DIR = output
 
 # Project files
-SCHEMATIC = hwboard-bike-computer.kicad_sch
-PCB = hwboard-bike-computer.kicad_pcb
+SCHEMATIC = PCB/hwboard-bike-computer.kicad_sch
+PCB = PCB/hwboard-bike-computer.kicad_pcb
 
 # Colors for terminal output
 COLOR_RESET = \033[0m
