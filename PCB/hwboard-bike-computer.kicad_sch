@@ -39,6 +39,36 @@
 				(justify left top)
 			)
 		)
+		(pin "3V3_{OUT}" output
+			(at 170.18 88.9 0)
+			(uuid "1151e7d5-7517-41a5-afa2-d8e33dc8f5e4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_{BUS}{I2C}" bidirectional
+			(at 170.18 99.06 0)
+			(uuid "f0b2df4c-be7e-4897-8536-1933c9d86b1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "5V_{IN}" input
+			(at 130.81 95.25 180)
+			(uuid "49f8f19d-f584-4bac-ba12-8109221f8b7a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "hwboard-bike-computer"
 				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402"
