@@ -30,7 +30,7 @@ jobs:
           fetch-depth: 0
       
       - name: Run KiBot
-        uses: INTI-CMNB/KiBot@v2_k8_1_8_4
+        uses: INTI-CMNB/KiBot@v2_k9
         with:
           config: hwboard.kibot.yaml
           dir: output
