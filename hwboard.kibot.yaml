@@ -1,0 +1,246 @@
+# KiBot configuration for HWBoard Bike Computer PCB
+# Version: 1.8.4
+kibot:
+  version: 1
+
+globals:
+  # Filters for KiBot warnings
+  filters:
+    - filter: Ignore PcbDraw missing components
+      number: 103
+    - filter: Ignore missing KiCad config, not in docker images
+      number: 8
+    - filter: Ignore missing KiCad 3D models, not in docker images
+      number: 10
+    - filter: Ignore missing KiCad config from KiAuto, not in docker images
+      number: 58
+      regex: kicad_common.json
+  
+  # Output directory
+  output: 'assets'
+  
+  # Restore project after run
+  restore_project: true
+  
+  # Time format
+  time_reformat: false
+
+preflight:
+  check_zone_fills: true
+  run_erc: true
+  run_drc: true
+  
+  # Filters for ERC/DRC errors/warnings
+  filters:
+    - filter: 'Ignore specific warnings'
+      error: 'silk_over_copper'
+      regex: 'clipped by solder mask'
+  
+  # Set text variables for git hash and date
+  set_text_variables:
+    - name: 'git_hash'
+      command: 'git log -1 --format="%h" $KIBOT_PCB_NAME'
+      before: 'Git:'
+    - name: 'date'
+      command: 'date --iso-8601=minutes'
+
+outputs:
+  # Schematic outputs
+  - name: 'schematic_pdf'
+    comment: "Schematic in PDF format"
+    type: pdf_sch_print
+    dir: 'assets/schematics'
+    options:
+      output: '%f-%i%I%v.%x'
+      title: 'HWBoard Bike Computer - Schematic'
+  
+  - name: 'schematic_png'
+    comment: "Schematic in PNG format"
+    type: sch_variant
+    dir: 'assets/schematics'
+    options:
+      output: '%f-%i%I%v.%x'
+      format: 'png'
+      dpi: 300
+  
+  # PCB outputs - PDF
+  - name: 'pcb_pdf'
+    comment: "PCB assembly documentation in PDF"
+    type: pcb_print
+    dir: 'assets/pcb'
+    options:
+      output: '%f-pcb%I%v.%x'
+      force_edge_cuts: true
+      title: 'HWBoard Bike Computer - PCB'
+      scaling: 2.0
+      pages:
+        - layers: [ F.Paste, F.Adhes, Dwgs.User, F.Fab ]
+          sheet: 'Fabrication layers'
+        - layers:
+            - layer: F.Cu
+            - layer: F.Mask
+              color: '#14332440'
+            - layer: F.SilkS
+            - layer: Dwgs.User
+          sheet: 'Top layer'
+        - layers:
+            - layer: B.Cu
+            - layer: B.Mask
+              color: '#14332440'
+            - layer: B.SilkS
+            - layer: Dwgs.User
+          sheet: 'Bottom layer'
+          mirror: true
+  
+  # PCB outputs - PNG
+  - name: 'pcb_top_png'
+    comment: "PCB top view in PNG"
+    type: pcbdraw
+    dir: 'assets/pcb'
+    options:
+      output: '%f-top%I%v.%x'
+      format: png
+      dpi: 300
+      show_components: all
+  
+  - name: 'pcb_bottom_png'
+    comment: "PCB bottom view in PNG"
+    type: pcbdraw
+    dir: 'assets/pcb'
+    options:
+      output: '%f-bottom%I%v.%x'
+      format: png
+      dpi: 300
+      bottom: true
+      show_components: all
+  
+  # Bill of Materials
+  - name: 'bom_html'
+    comment: "Bill of Materials in HTML format"
+    type: bom
+    dir: 'assets/bom'
+    options:
+      output: '%f-bom%I%v.%x'
+      format: HTML
+      html:
+        datasheet_as_link: MFP
+        title: 'HWBoard Bike Computer - Bill of Materials'
+        highlight_empty: false
+      columns:
+        - Row
+        - References
+        - Quantity Per PCB
+        - field: Value
+          join: ['voltage', 'current', 'power', 'tolerance']
+        - field: MFN
+          name: Manufacturer
+        - field: MFP
+          name: Manf. Part
+        - Footprint
+      normalize_values: true
+  
+  - name: 'bom_xlsx'
+    comment: "Bill of Materials in XLSX format"
+    type: bom
+    dir: 'assets/bom'
+    options:
+      output: '%f-bom%I%v.%x'
+      format: XLSX
+      xlsx:
+        datasheet_as_link: MFP
+        title: 'HWBoard Bike Computer - Bill of Materials'
+        max_col_width: 40
+        highlight_empty: false
+      columns:
+        - Row
+        - References
+        - Quantity Per PCB
+        - field: Value
+          join: ['voltage', 'current', 'power', 'tolerance']
+        - field: MFN
+          name: Manufacturer
+        - field: MFP
+          name: Manf. Part
+        - Footprint
+      normalize_values: true
+  
+  # Interactive BOM
+  - name: 'ibom'
+    comment: 'Interactive HTML BOM'
+    type: ibom
+    dir: 'assets/bom'
+    options:
+      output: '%f-ibom%I%v.%x'
+      layer_view: F
+  
+  # Gerber files
+  - name: 'gerbers'
+    comment: 'Gerber files for fabrication'
+    type: gerber
+    dir: 'assets/gerbers'
+    layers:
+      - copper
+      - Edge.Cuts
+      - F.SilkS
+      - B.SilkS
+      - F.Mask
+      - B.Mask
+      - F.Paste
+      - B.Paste
+      - F.Adhes
+      - B.Adhes
+      - F.Fab
+      - B.Fab
+      - F.CrtYd
+      - B.CrtYd
+      - Dwgs.User
+  
+  # Drill files
+  - name: 'drill'
+    comment: 'Drill files'
+    type: excellon
+    dir: 'assets/drill'
+    options:
+      map:
+        type: pdf
+      pth_and_npth_single_file: false
+  
+  # Position files (Pick and Place)
+  - name: 'position'
+    comment: 'Pick and Place file'
+    type: position
+    dir: 'assets/position'
+    options:
+      output: '%f-position%I%v.%x'
+      format: CSV
+      separate_files_for_front_and_back: false
+  
+  # 3D Models
+  - name: 'step_3d'
+    comment: "STEP 3D model"
+    type: step
+    dir: 'assets/3d'
+    options:
+      output: '%f-3d%I%v.%x'
+  
+  - name: '3d_top_view'
+    comment: "3D render from top"
+    type: render_3d
+    dir: 'assets/3d'
+    options:
+      output: '%f-3d-top%I%v.%x'
+      zoom: 4
+      rotate_x: 3
+      rotate_z: 3
+      ray_tracing: true
+  
+  - name: '3d_bottom_view'
+    comment: "3D render from bottom"
+    type: render_3d
+    dir: 'assets/3d'
+    options:
+      output: '%f-3d-bottom%I%v.%x'
+      zoom: 4
+      rotate_x: 3
+      rotate_z: -177
+      ray_tracing: true

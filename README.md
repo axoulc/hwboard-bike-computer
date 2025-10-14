@@ -1,8 +1,14 @@
 # 🛠️ HWBoard Bike Computer PCB
 
+[![KiBot CI/CD](https://github.com/axoulc/hwboard-bike-computer/workflows/KiBot%20CI%2FCD/badge.svg)](https://github.com/axoulc/hwboard-bike-computer/actions)
+[![License: CERN-OHL-P](https://img.shields.io/badge/License-CERN--OHL--P--2.0-blue.svg)](https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2)
+[![KiCad](https://img.shields.io/badge/KiCad-8.0-blue.svg)](https://www.kicad.org/)
+
 This project is a KiCad hardware design for a custom printed circuit board (PCB) that powers a modern open-source bike computer, inspired by [Pi Zero Bikecomputer](https://github.com/hishizuka/pizero_bikecomputer).
 
 It enables you to build a feature-rich cycling computer with GPS, sensors, and offline maps, using a Raspberry Pi Compute Module 0 (CM0) as the main processor.
+
+> **🚀 Quick Start**: New to the project? Check out the [Quick Start Guide](QUICKSTART.md) to get up and running in 5 minutes!
 
 ---
 
@@ -50,10 +56,24 @@ It enables you to build a feature-rich cycling computer with GPS, sensors, and o
 
 ---
 
+## 🏗️ Manufacturing & Documentation
+
+This project uses automated CI/CD with KiBot to generate all necessary fabrication files:
+- 📄 Schematics (PDF & PNG)
+- 🔧 PCB documentation (PDF & PNG)
+- 📦 Bill of Materials (HTML, XLSX, Interactive)
+- 🏭 Gerber files, drill files, and position files
+- 🎨 3D models and renders
+
+See [KIBOT_CICD.md](KIBOT_CICD.md) for details on the automated build system.
+
+---
+
 ## 📚 Resources
 - [Pi Zero Bikecomputer GitHub](https://github.com/hishizuka/pizero_bikecomputer)
 - [Hardware Installation Guide](https://github.com/hishizuka/pizero_bikecomputer/blob/master/doc/hardware_installation.md)
 - [Software Installation Guide](https://github.com/hishizuka/pizero_bikecomputer/blob/master/doc/software_installation.md)
+- [KiBot CI/CD Documentation](KIBOT_CICD.md)
 
 ---
 

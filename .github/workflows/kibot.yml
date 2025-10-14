@@ -1,0 +1,56 @@
+name: KiBot CI/CD
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+      - 'hwboard.kibot.yaml'
+      - '.github/workflows/kibot.yml'
+  pull_request:
+    paths:
+      - '**.kicad_sch'
+      - '**.kicad_pcb'
+      - 'hwboard.kibot.yaml'
+      - '.github/workflows/kibot.yml'
+  workflow_dispatch:
+
+jobs:
+  kibot:
+    runs-on: ubuntu-latest
+    name: Generate KiCad outputs
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Run KiBot
+        uses: INTI-CMNB/KiBot@v2_k8_1_8_4
+        with:
+          config: hwboard.kibot.yaml
+          dir: output
+          schema: 'hwboard-bike-computer.kicad_sch'
+          board: 'hwboard-bike-computer.kicad_pcb'
+          skip: run_erc,run_drc
+          verbose: 2
+      
+      - name: Upload results
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: kibot-outputs
+          path: output/
+          retention-days: 30
+      
+      - name: Upload assets
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: fabrication-files
+          path: output/assets/
+          retention-days: 90

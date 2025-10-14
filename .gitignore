@@ -1,0 +1,23 @@
+# KiBot output directory
+output/
+assets/
+
+# KiCad project files
+*.bak
+*.lck
+*.prl
+fp-info-cache
+
+# Backup folders
+*-backups/
+
+# Python
+__pycache__/
+*.pyc
+
+# Misc
+*.swp
+*.swo
+*.tmp
+*.log
+.DS_Store
