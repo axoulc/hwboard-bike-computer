@@ -12,7 +12,7 @@ It enables you to build a feature-rich cycling computer with GPS, sensors, and o
 
 ---
 
-## 📦 Features
+# 📦 Features
 - Modular design for easy assembly and customization
 - Compatible with Raspberry Pi CM0 ecosystem
 - Supports GPS, ANT+ sensors, I2C sensors, and more
@@ -55,6 +55,27 @@ It enables you to build a feature-rich cycling computer with GPS, sensors, and o
 - Efficient power management for long rides
 
 ---
+
+# Preview
+
+## Schematics
+
+[![schematic-preview](https://axoulc.github.io/hwboard-bike-computer/assets/schematics/hwboard-bike-computer-schematic.png)](https://axoulc.github.io/hwboard-bike-computer/assets/schematics/hwboard-bike-computer-schematic.pdf)
+[Fullscreen PDF](https://axoulc.github.io/hwboard-bike-computer/assets/schematics/hwboard-bike-computer-schematic.pdf)
+
+## PCB
+
+### Top
+
+![top-pcb-preview](https://axoulc.github.io/hwboard-bike-computer/assets/pcb/hwboard-bike-computer-top.png)
+
+### Bottom
+
+![bottom-pcb-preview](https://axoulc.github.io/hwboard-bike-computer/assets/pcb/hwboard-bike-computer-bottom.png)
+
+## 3D
+
+![top-3d-preview](https://axoulc.github.io/hwboard-bike-computer/assets/3d/hwboard-bike-computer-3d-top.png)
 
 ## 🏗️ Manufacturing & Documentation
 
