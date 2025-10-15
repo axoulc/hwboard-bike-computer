@@ -84,6 +84,28 @@ jobs:
           path: output/assets/
           retention-days: 90
       
+      - name: Convert PDF first page to PNG
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        run: |
+          # Install ImageMagick if needed
+          sudo apt-get update
+          sudo apt-get install -y imagemagick ghostscript
+          
+          # Configure ImageMagick policy to allow PDF conversion
+          sudo sed -i 's/rights="none" pattern="PDF"/rights="read|write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml
+          
+          # Convert first page of PDF to PNG
+          if [ -f "pages/assets/schematics/hwboard-bike-computer-schematic.pdf" ]; then
+            convert -density 300 "pages/assets/schematics/hwboard-bike-computer-schematic.pdf[0]" \
+                    -quality 90 \
+                    -background white \
+                    -alpha remove \
+                    "pages/assets/schematics/hwboard-bike-computer-schematic.png"
+            echo "✓ Successfully converted PDF first page to PNG"
+          else
+            echo "⚠ PDF file not found at pages/assets/schematics/hwboard-bike-computer-schematic.pdf"
+          fi
+      
       - name: Setup Pages
         if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
         uses: actions/configure-pages@v4
