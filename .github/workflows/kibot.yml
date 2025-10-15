@@ -18,6 +18,17 @@ on:
       - '.github/workflows/kibot.yml'
   workflow_dispatch:
 
+# Required for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   kibot:
     runs-on: ubuntu-latest
@@ -39,18 +50,51 @@ jobs:
           skip: run_erc,run_drc
           verbose: 2
       
-      - name: Upload results
-        if: ${{ always() }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: kibot-outputs
-          path: output/
-          retention-days: 30
+      - name: Organize assets for GitHub Pages
+        run: |
+          mkdir -p pages/assets
+          cp -r output/assets/* pages/assets/
+          # Optional: Create an index.html for browsing
+          cat > pages/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <title>KiCad Outputs</title>
+              <style>
+                  body { font-family: Arial, sans-serif; margin: 40px; }
+                  h1 { color: #333; }
+                  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+                  .gallery img { width: 100%; border: 1px solid #ddd; border-radius: 4px; }
+              </style>
+          </head>
+          <body>
+              <h1>KiCad Generated Assets</h1>
+              <div class="gallery">
+                  <!-- Images will be listed here -->
+              </div>
+          </body>
+          </html>
+          EOF
       
-      - name: Upload assets
+      - name: Upload artifacts (for download)
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
           name: fabrication-files
           path: output/assets/
           retention-days: 90
+      
+      - name: Setup Pages
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        uses: actions/configure-pages@v4
+      
+      - name: Upload to GitHub Pages
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: pages
+      
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+        id: deployment
+        uses: actions/deploy-pages@v4
