@@ -90,7 +90,7 @@ See [KIBOT_CICD.md](KIBOT_CICD.md) for details on the automated build system.
 
 ## ⚙️ Printed Circuit Board 
 
-Manufacturing Sponsor: Thanks to PCBWay for sponsoring fabrication and assembly of the hwboard-bike-computer. Their high-quality manufacturing, quick turnaround, significantly accelerated the build process. Moreover, their service was excellent and addressed questions promptly and clearly. As a bonus, PCBWay offers affordable, unique silkscreen colours.
+**Manufacturing Sponsor:** Thanks to **PCBWay** for sponsoring fabrication and assembly of the hwboard-bike-computer. Their high-quality manufacturing, quick turnaround, significantly accelerated the build process. Moreover, their service was excellent and addressed questions promptly and clearly. As a bonus, PCBWay offers affordable, unique silkscreen colours.
 More to come in the coming months for the first phase of production.
 
 ---
