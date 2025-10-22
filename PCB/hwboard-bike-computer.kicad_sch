@@ -4,9 +4,14 @@
 	(generator_version "9.0")
 	(uuid "8c0f76b9-ee42-4bcf-bb95-09772e367402")
 	(paper "A4")
+	(title_block
+		(title "HWBoard Bike Computer")
+		(date "2025-10-22")
+		(rev "0.1")
+	)
 	(lib_symbols)
 	(sheet
-		(at 130.81 82.55)
+		(at 52.07 85.09)
 		(size 39.37 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,7 +27,7 @@
 		)
 		(uuid "2eeec114-113a-4fee-bbbb-7327b1475a37")
 		(property "Sheetname" "CPU"
-			(at 130.81 81.8384 0)
+			(at 52.07 84.3784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,7 +36,7 @@
 			)
 		)
 		(property "Sheetfile" "hwboard-cpu.kicad_sch"
-			(at 130.81 117.4246 0)
+			(at 52.07 119.9646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40,7 +45,7 @@
 			)
 		)
 		(pin "3V3_{OUT}" output
-			(at 170.18 88.9 0)
+			(at 91.44 91.44 0)
 			(uuid "1151e7d5-7517-41a5-afa2-d8e33dc8f5e4")
 			(effects
 				(font
@@ -50,7 +55,7 @@
 			)
 		)
 		(pin "I2C_{BUS}{I2C}" bidirectional
-			(at 170.18 99.06 0)
+			(at 91.44 101.6 0)
 			(uuid "f0b2df4c-be7e-4897-8536-1933c9d86b1b")
 			(effects
 				(font
@@ -60,7 +65,7 @@
 			)
 		)
 		(pin "5V_{IN}" input
-			(at 130.81 95.25 180)
+			(at 52.07 97.79 180)
 			(uuid "49f8f19d-f584-4bac-ba12-8109221f8b7a")
 			(effects
 				(font
@@ -73,6 +78,48 @@
 			(project "hwboard-bike-computer"
 				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 85.09)
+		(size 39.37 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f22d29b6-6787-4cd0-8e73-afaa25f4cab0")
+		(property "Sheetname" "GNSS"
+			(at 120.65 84.3784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "hwboard-gnss.kicad_sch"
+			(at 120.65 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "hwboard-bike-computer"
+				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402"
+					(page "3")
 				)
 			)
 		)

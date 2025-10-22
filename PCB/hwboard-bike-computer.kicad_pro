@@ -430,7 +430,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -447,8 +447,12 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "hwboard-bike-computer"
+    ],
+    "pinned_symbol_libs": [
+      "hwboard-bike-computer"
+    ]
   },
   "meta": {
     "filename": "hwboard-bike-computer.kicad_pro",
@@ -617,6 +621,10 @@
     [
       "2eeec114-113a-4fee-bbbb-7327b1475a37",
       "CPU"
+    ],
+    [
+      "f22d29b6-6787-4cd0-8e73-afaa25f4cab0",
+      "GNSS"
     ]
   ],
   "text_variables": {}
