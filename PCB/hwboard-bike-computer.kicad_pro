@@ -629,6 +629,18 @@
     [
       "4b830c8b-a993-4513-b498-b6b511f6381b",
       "Screen"
+    ],
+    [
+      "728eca50-6b07-4acf-ac7c-661377db2a6b",
+      "Power Management"
+    ],
+    [
+      "8f8a955d-0b0a-425c-a7dd-7b9e4e273caf",
+      "SMPS"
+    ],
+    [
+      "1067b65f-cb2a-4b45-9f76-9b76b01ea2ba",
+      "Sensors"
     ]
   ],
   "text_variables": {}
