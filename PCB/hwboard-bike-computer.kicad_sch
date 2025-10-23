@@ -83,6 +83,48 @@
 		)
 	)
 	(sheet
+		(at 201.93 85.09)
+		(size 30.48 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4b830c8b-a993-4513-b498-b6b511f6381b")
+		(property "Sheetname" "Screen"
+			(at 201.93 84.3784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "hwboard-screen.kicad_sch"
+			(at 201.93 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "hwboard-bike-computer"
+				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 120.65 85.09)
 		(size 39.37 34.29)
 		(exclude_from_sim no)
