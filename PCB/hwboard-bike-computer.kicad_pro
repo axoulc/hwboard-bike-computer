@@ -641,6 +641,10 @@
     [
       "1067b65f-cb2a-4b45-9f76-9b76b01ea2ba",
       "Sensors"
+    ],
+    [
+      "f0c14f95-fee4-4713-9e00-229c734ced8a",
+      "ANT+"
     ]
   ],
   "text_variables": {}
