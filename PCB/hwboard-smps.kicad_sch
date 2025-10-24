@@ -812,6 +812,56 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "# U2 - TPS61089RNRR\nTPS61089 Synchronous Boost Converter\nInput: 3.0-4.35V (Li-ion), Output: 5V @ 2.5A\nEfficiency: ~88-90% @ full load\nPackage: VQFN-11 (2.0mm × 2.5mm)"
+		(exclude_from_sim no)
+		(at 148.59 64.008 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+		)
+		(uuid "2cc3c98d-cdae-427e-b8e0-93f4c4e27de9")
+	)
+	(text "# R5 - 147kΩ (ILIM - Current Limit)\nTarget: I_{LIM} = 7A (margin above 5.4A peak)\nFormula: R_{ILIM} = 1,030,000 / I_{LIM} (from datasheet eq. 2)\nCalc: R_{ILIM} = 1,030,000 / 7A = 147,143Ω\nResult: R5 = 147kΩ, 1%\nActual limit: I_{LIM} = 1,030,000 / 147k = 7.0A\nSafety margin: 7.0A / 5.4A = 1.3×"
+		(exclude_from_sim no)
+		(at 143.764 139.446 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+		)
+		(uuid "508ca123-c7ac-4116-a795-816b03898e04")
+	)
+	(text "# R1 - 301kΩ (FSW - Switching Frequency)\nTarget: f_{SW} = 500kHz\nFormula: R_{FREQ} = (V_{OUT} - V_{IN}) / (4 × f_{SW} × C_{FREQ} × V_{IN}) - t_{DELAY}\nWhere: C_{FREQ} = 24pF, t_{DELAY} = 86ns\nCalc: R_{FREQ} = (5V - 3V) / (4 × 500kHz × 24pF × 3V) - 86ns\nR_{FREQ} ≈ 301kΩ for f_{SW} = 500kHz (from datasheet)"
+		(exclude_from_sim no)
+		(at 103.632 63.5 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+		)
+		(uuid "87ee7766-441a-4b75-a2f3-e95fc4bd29e8")
+	)
+	(text "# R3 - 316kΩ (FB Top - Output Voltage Setting)\nTarget: V_{OUT} = 5.0V, V_{REF} = 1.212V\nChoose: R4 = 100kΩ (feedback divider bottom)\nI_{FB} = V_{REF} / R4 = 1.212V / 100kΩ = 12.1µA (>10µA min)\nFormula: R3 = R4 × (V_{OUT} - V_{REF}) / V_{REF}\nCalc: R3 = 100kΩ × (5.0V - 1.212V) / 1.212V\nR3 = 100kΩ × 3.788 / 1.212 = 312.5kΩ\nResult: R4 = 316kΩ (nearest E96), 1%\nActual V_{OUT} = V_{REF} × (1 + R1/R2) = 1.212V × (1 + 316k/100k) = 5.04V\n\n# R4 - 100kΩ (FB Bottom - Output Voltage Setting)\nFormula: R2 selected to ensure I_{FB} > 10µA\nCalc: I_{FB} = V_{REF} / R4 = 1.212V / 100kΩ = 12.1µA ✓\nPower: P_{R4} = V_{REF}² / R4 = 1.212²V / 100kΩ = 14.7µW\nResult: R4 = 100kΩ, 1%"
+		(exclude_from_sim no)
+		(at 208.788 140.716 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+		)
+		(uuid "d3240278-1b3d-462c-a162-f7f5cebee4e7")
+	)
+	(text "# L1 - 1.8µH Inductor (CDMC8D28NP-1R8MC)\nCalc: P_{OUT} = V_{OUT} × I_{OUT} = 5V × 2.5A = 12.5W\nP_{IN} = P_{OUT} / η = 12.5W / 0.88 = 14.2W\nI_{DC} = (V_{OUT} × I_{OUT}) / (V_{IN} × η) = 12.5W / (3.0V × 0.88) = 4.73A\nΔI_L = (V_{IN} × (1 - V_{IN}/V_{OUT})) / (L × f_{SW})\nΔI_L = (3.0V × (1 - 3.0/5.0)) / (1.8µH × 500kHz) = 1.33A\nI_{peak} = I_{DC} + ΔI_L/2 = 4.73A + 0.67A = 5.4A\nSelected: L = 1.8µH, I_{SAT} = 9.4A, DCR = 12.6mΩ\nMargin: 9.4A / 5.4A = 1.74× (>1.3× required)"
+		(exclude_from_sim no)
+		(at 48.514 62.484 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+		)
+		(uuid "fda2d7b3-dbdb-4d38-bf96-dc844c361ae5")
+	)
 	(junction
 		(at 222.25 88.9)
 		(diameter 0)
@@ -1522,7 +1572,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "316k"
 			(at 209.55 99.0599 0)
 			(effects
 				(font
@@ -1592,7 +1642,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "100k"
 			(at 209.55 114.2999 0)
 			(effects
 				(font
@@ -1662,7 +1712,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "22u"
 			(at 252.73 106.6799 0)
 			(effects
 				(font
@@ -1798,7 +1848,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "22u"
 			(at 78.74 106.6799 0)
 			(effects
 				(font
@@ -1868,7 +1918,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "22u"
 			(at 238.76 106.6799 0)
 			(effects
 				(font
@@ -2004,7 +2054,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "147k"
 			(at 175.26 113.0299 0)
 			(effects
 				(font
@@ -2074,7 +2124,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "17.4k"
 			(at 193.04 105.4099 0)
 			(effects
 				(font
@@ -2144,7 +2194,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "2.2u"
 			(at 166.37 113.0299 0)
 			(effects
 				(font
@@ -2214,7 +2264,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "301k"
 			(at 121.92 95.2499 0)
 			(effects
 				(font
@@ -2272,7 +2322,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b7ba9ad8-e72e-46ff-9bf5-38b12cefacfb")
 		(property "Reference" "C7"
@@ -2284,7 +2334,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "DNP"
 			(at 185.42 110.4899 0)
 			(effects
 				(font
@@ -2647,7 +2697,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "4.7n"
 			(at 194.31 115.5699 0)
 			(effects
 				(font
@@ -2717,7 +2767,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "22u"
 			(at 226.06 106.6799 0)
 			(effects
 				(font
@@ -2787,7 +2837,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100n"
 			(at 132.08 93.9799 0)
 			(effects
 				(font
@@ -2922,7 +2972,7 @@
 				)
 			)
 		)
-		(property "Value" "L"
+		(property "Value" "1.8u"
 			(at 110.49 86.36 90)
 			(effects
 				(font
