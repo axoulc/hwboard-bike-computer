@@ -136,6 +136,9 @@
 			(embedded_fonts no)
 		)
 	)
+	(bus_alias "SERIAL"
+		(members "TX" "RX")
+	)
 	(wire
 		(pts
 			(xy 250.19 35.56) (xy 250.19 38.1)
@@ -606,6 +609,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "V_{IN}" input
+			(at 52.07 92.71 180)
+			(uuid "4b139cd0-34bf-4a6a-ae5f-c655c176e505")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_{GNSS}{I2C}" bidirectional
+			(at 91.44 92.71 0)
+			(uuid "b99032cf-9e81-44f0-81bf-c804cffb3f5d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SERIAL_{GNSS}{SERIAL}" bidirectional
+			(at 91.44 106.68 0)
+			(uuid "4336bf12-34ac-4b78-b18d-7be423327080")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

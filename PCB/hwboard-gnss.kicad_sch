@@ -5,6 +5,307 @@
 	(uuid "14d08528-1220-4b76-97ce-94f6bc203fb6")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:L"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at -1.27 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "L"
+				(at 1.905 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "hwboard-bike-computer:TESEO-LIV3R"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -360,37 +661,566 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 119.38 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "30529bd5-93b1-41e5-80c6-be246a8b53ba")
+	)
+	(junction
+		(at 147.32 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f1cd33b-cae8-4896-a904-55c563efd570")
+	)
+	(junction
+		(at 151.13 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8483c5a8-0374-40ce-83e6-4334b9bd0f9f")
+	)
+	(junction
+		(at 81.28 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bb684618-5324-4b5b-a4a9-3a2dfebdd689")
+	)
+	(junction
+		(at 154.94 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf10957f-7f3d-4545-a98d-90f67dd224bd")
+	)
+	(bus_entry
+		(at 196.85 96.52)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17287cff-6220-46ad-bf55-cddc2b9ab5fa")
+	)
+	(bus_entry
+		(at 196.85 109.22)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a4e2f43-bd3f-409d-80bb-efe46dd2d3b2")
+	)
+	(bus_entry
+		(at 196.85 106.68)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9303686f-0603-4f86-bd9f-d77a567e6cf8")
+	)
+	(bus_entry
+		(at 196.85 93.98)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b06e6ba8-8516-4b32-8ad8-b3b4eb21eb15")
+	)
+	(wire
+		(pts
+			(xy 151.13 78.74) (xy 147.32 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05adcc45-a45b-44d2-9925-b7673af7cfc5")
+	)
+	(wire
+		(pts
+			(xy 157.48 123.19) (xy 157.48 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0951959d-fb8d-4476-a6ea-d4509bab1f74")
+	)
+	(wire
+		(pts
+			(xy 167.64 111.76) (xy 194.31 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d5c599f-d0a0-40cc-88de-1f4c6dfbda14")
+	)
+	(bus
+		(pts
+			(xy 196.85 105.41) (xy 196.85 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c9785db-6887-4f04-8258-37662ad27715")
+	)
+	(wire
+		(pts
+			(xy 147.32 83.82) (xy 147.32 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24c5f6b2-f45a-4d20-b787-cc9f228be062")
+	)
+	(wire
+		(pts
+			(xy 119.38 64.77) (xy 119.38 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2624cb00-d1f8-4bf0-829b-f49b0c4d41a3")
+	)
+	(wire
+		(pts
+			(xy 167.64 109.22) (xy 194.31 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2775d269-c1f4-4921-94c6-5e459f02d2c3")
+	)
+	(bus
+		(pts
+			(xy 196.85 106.68) (xy 196.85 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27b76a1f-f7d7-484a-a9a9-0b12f110bfad")
+	)
+	(wire
+		(pts
+			(xy 152.4 120.65) (xy 152.4 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29e5ec78-f456-4d7b-b131-c7f815cb1ac6")
+	)
+	(bus
+		(pts
+			(xy 196.85 93.98) (xy 196.85 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39cf9ee7-77dd-4b78-9f6c-637df54d45cd")
+	)
+	(wire
+		(pts
+			(xy 81.28 76.2) (xy 81.28 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ea98698-1bb0-40b7-b95a-e19649f03df7")
+	)
+	(wire
+		(pts
+			(xy 151.13 78.74) (xy 151.13 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42481c41-d14b-4ac7-b14b-bc00c056f24b")
+	)
+	(bus
+		(pts
+			(xy 199.39 92.71) (xy 196.85 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4afd71bf-5106-41ad-bf57-58237434cb05")
+	)
+	(wire
+		(pts
+			(xy 81.28 64.77) (xy 81.28 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61cafe96-d741-4aef-be0c-476ddc67e73f")
+	)
+	(wire
+		(pts
+			(xy 154.94 123.19) (xy 157.48 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62450123-0cb5-410b-9392-5e68bac2a019")
+	)
+	(wire
+		(pts
+			(xy 154.94 83.82) (xy 154.94 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82049bad-7a44-4d38-93d4-5057dc0b12ff")
+	)
+	(bus
+		(pts
+			(xy 199.39 105.41) (xy 196.85 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a13f8ed5-c709-4996-9d23-d82eb0b04db5")
+	)
+	(wire
+		(pts
+			(xy 154.94 78.74) (xy 151.13 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a278b7c7-9156-44db-8758-0dd455600856")
+	)
+	(wire
+		(pts
+			(xy 147.32 64.77) (xy 119.38 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8dd5176-1d73-4155-8fc6-9e784e15fb32")
+	)
+	(wire
+		(pts
+			(xy 152.4 123.19) (xy 154.94 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa7e8eb8-6e83-408f-8608-c0affd40bd70")
+	)
+	(bus
+		(pts
+			(xy 196.85 92.71) (xy 196.85 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aae41e3b-daf1-4ba1-b4b5-d8bc1e022a57")
+	)
+	(wire
+		(pts
+			(xy 119.38 76.2) (xy 119.38 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb48170a-994e-4edc-a535-7c7b0a9545d5")
+	)
+	(wire
+		(pts
+			(xy 154.94 123.19) (xy 154.94 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc395cb7-69af-4ad6-a097-8a3a4f64b42e")
+	)
+	(wire
+		(pts
+			(xy 147.32 78.74) (xy 147.32 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf017889-3523-4c53-8470-5bf73df18a0b")
+	)
+	(wire
+		(pts
+			(xy 104.14 64.77) (xy 119.38 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8106b04-0d2e-49f6-bf09-9fd62915bd2e")
+	)
+	(wire
+		(pts
+			(xy 81.28 64.77) (xy 96.52 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dee79cad-9f1a-4ab7-8eed-d48d51518eb1")
+	)
+	(wire
+		(pts
+			(xy 167.64 96.52) (xy 194.31 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df74164b-e0ef-4dfb-8983-36ae808f6689")
+	)
+	(wire
+		(pts
+			(xy 167.64 99.06) (xy 194.31 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9201b41-69d1-45ab-84ae-aa03feaf0ca7")
+	)
+	(wire
+		(pts
+			(xy 63.5 64.77) (xy 81.28 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbe5b7ab-5fc0-4166-841e-1d3c602b7c69")
+	)
+	(label "I2C_{GNSS}.SDA"
+		(at 173.99 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "073e2861-0dcb-47dd-ad27-46e0a2679aee")
+	)
+	(label "SERIAL_{GNSS}.TX"
+		(at 173.99 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "212e63b3-e514-4aea-8b7f-371494b93b92")
+	)
+	(label "SERIAL_{GNSS}.RX"
+		(at 173.99 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a840099-1840-48bf-8d0b-cf7a5ab07639")
+	)
+	(label "I2C_{GNSS}.SCL"
+		(at 173.99 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cb055b0b-a07b-4a10-ba01-1bece8459e9c")
+	)
+	(hierarchical_label "I2C_{GNSS}{I2C}"
+		(shape bidirectional)
+		(at 199.39 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ad99b03c-4a18-4dce-adec-d2ef363d4020")
+	)
+	(hierarchical_label "V_{IN}"
+		(shape input)
+		(at 63.5 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b0160006-e921-4c22-9b7e-48948f45f264")
+	)
+	(hierarchical_label "SERIAL_{GNSS}{SERIAL}"
+		(shape bidirectional)
+		(at 199.39 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e3dccfab-d063-407b-9127-d597d88eea1d")
 	)
 	(symbol
-		(lib_id "hwboard-bike-computer:TESEO-LIV3R")
-		(at 139.7 101.6 0)
+		(lib_id "power:GND")
+		(at 119.38 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "61e10878-3629-4069-8e1a-270e132ca117")
-		(property "Reference" "U1"
-			(at 144.3833 120.65 0)
+		(uuid "0c00b002-eb0d-4d5a-9481-49f4ff100616")
+		(property "Reference" "#PWR027"
+			(at 119.38 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "TESEO-LIV3R"
-			(at 144.3833 123.19 0)
+		(property "Value" "GND"
+			(at 119.38 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "hwboard-bike-computer:TESEOLIV3R"
-			(at 139.954 70.104 0)
+		(property "Footprint" ""
+			(at 119.38 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -399,7 +1229,210 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 101.6 0)
+			(at 119.38 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 119.38 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5fac00c5-ceba-47fd-8a45-17c2a2a69dcf")
+		)
+		(instances
+			(project "hwboard-bike-computer"
+				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402/f22d29b6-6787-4cd0-8e73-afaa25f4cab0"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 81.28 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "11df60eb-5dcd-4a86-af90-f823fc526c62")
+		(property "Reference" "#PWR026"
+			(at 81.28 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.28 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7a30b70-8b4e-4e4f-9e03-31027ab1194b")
+		)
+		(instances
+			(project "hwboard-bike-computer"
+				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402/f22d29b6-6787-4cd0-8e73-afaa25f4cab0"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 81.28 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4dfed5dd-8664-4a8f-9c9b-f24e91f6cfd5")
+		(property "Reference" "C18"
+			(at 85.09 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10n"
+			(at 85.09 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.2452 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 81.28 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "30da066d-46c9-411e-b93e-b9c729cffbe6")
+		)
+		(pin "1"
+			(uuid "db0c312e-d765-4cc5-b5d5-e34da172b03d")
+		)
+		(instances
+			(project ""
+				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402/f22d29b6-6787-4cd0-8e73-afaa25f4cab0"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "hwboard-bike-computer:TESEO-LIV3R")
+		(at 154.94 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61e10878-3629-4069-8e1a-270e132ca117")
+		(property "Reference" "U1"
+			(at 159.6233 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TESEO-LIV3R"
+			(at 159.6233 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "hwboard-bike-computer:TESEOLIV3R"
+			(at 155.194 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -408,7 +1441,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 101.6 0)
+			(at 154.94 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -468,6 +1501,210 @@
 			(project ""
 				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402/f22d29b6-6787-4cd0-8e73-afaa25f4cab0"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 154.94 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8541d683-5c8e-4260-bb16-777e2ddff055")
+		(property "Reference" "#PWR025"
+			(at 154.94 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 154.94 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21f943dc-b199-4889-a526-c494de122845")
+		)
+		(instances
+			(project ""
+				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402/f22d29b6-6787-4cd0-8e73-afaa25f4cab0"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 100.33 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df0a5322-be27-45ca-a81f-e6f532192e10")
+		(property "Reference" "L3"
+			(at 100.33 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "27n"
+			(at 100.33 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 100.33 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 100.33 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c51e2ee6-a9a9-4df6-8b82-a4ba14376608")
+		)
+		(pin "2"
+			(uuid "7ac4e994-0a69-47a2-998e-ba3e08e10cef")
+		)
+		(instances
+			(project ""
+				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402/f22d29b6-6787-4cd0-8e73-afaa25f4cab0"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 119.38 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f24abe8d-7ac7-41cc-8b52-307b39f5e99f")
+		(property "Reference" "C19"
+			(at 123.19 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "56p"
+			(at 123.19 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.3452 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 119.38 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e6f9da62-16c1-48bb-996b-68e0b2b65846")
+		)
+		(pin "1"
+			(uuid "e59f240f-915e-48a2-ae05-2984b0bcfec2")
+		)
+		(instances
+			(project "hwboard-bike-computer"
+				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402/f22d29b6-6787-4cd0-8e73-afaa25f4cab0"
+					(reference "C19")
 					(unit 1)
 				)
 			)
