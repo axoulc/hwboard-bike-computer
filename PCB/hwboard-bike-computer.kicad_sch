@@ -148,6 +148,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 38.1) (xy 205.74 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e2b5c0a-1239-4de9-9b87-28eecc0400b1")
+	)
+	(wire
+		(pts
 			(xy 250.19 38.1) (xy 245.11 38.1)
 		)
 		(stroke
@@ -410,6 +420,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "V_{LOAD}" output
+			(at 168.91 38.1 0)
+			(uuid "880841af-84f1-48a1-86fd-c165e49d8eeb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_{BATT}" bidirectional
+			(at 129.54 38.1 180)
+			(uuid "b3e1019e-910f-4b96-9bec-d96541709906")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "V_{CHARG}" input
+			(at 129.54 50.8 180)
+			(uuid "1cf00624-bdbc-4336-a71d-5d2206f90a48")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
