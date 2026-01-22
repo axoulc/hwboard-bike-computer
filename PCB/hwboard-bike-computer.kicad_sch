@@ -264,6 +264,92 @@
 	(bus_alias "SERIAL"
 		(members "TX" "RX")
 	)
+	(junction
+		(at 105.41 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36c3a279-9712-4332-8fa1-b7edd2f51384")
+	)
+	(bus
+		(pts
+			(xy 101.6 125.73) (xy 173.99 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03c1174c-7bd3-4728-8b4e-3c4e7394c0c4")
+	)
+	(bus
+		(pts
+			(xy 173.99 125.73) (xy 173.99 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08be2c03-c646-4748-bc3d-0f4dd55731a5")
+	)
+	(wire
+		(pts
+			(xy 95.25 144.78) (xy 95.25 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20396985-8283-4871-90ba-ab5d652c396a")
+	)
+	(bus
+		(pts
+			(xy 105.41 160.02) (xy 105.41 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dab2731-80a2-4c51-9b4f-7f47574aaa6c")
+	)
+	(bus
+		(pts
+			(xy 168.91 91.44) (xy 173.99 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45ea2efe-5843-4f66-b53c-50e93cd9d3ec")
+	)
+	(wire
+		(pts
+			(xy 95.25 148.59) (xy 91.44 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e0f0563-44b3-4249-8163-677f29f2ded8")
+	)
+	(bus
+		(pts
+			(xy 105.41 92.71) (xy 91.44 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5155c79c-fbdc-4311-bd60-244455c6e3d7")
+	)
+	(bus
+		(pts
+			(xy 105.41 78.74) (xy 105.41 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b661cd3-bc40-40a2-8ff4-f97e3070cea8")
+	)
 	(wire
 		(pts
 			(xy 116.84 104.14) (xy 116.84 106.68)
@@ -294,6 +380,26 @@
 		)
 		(uuid "7e2b5c0a-1239-4de9-9b87-28eecc0400b1")
 	)
+	(bus
+		(pts
+			(xy 173.99 91.44) (xy 173.99 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88cff598-0bbe-40ab-b32c-3bdd4ca80be6")
+	)
+	(bus
+		(pts
+			(xy 91.44 160.02) (xy 105.41 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "914a4082-2e00-44e0-825a-baaba1750b29")
+	)
 	(wire
 		(pts
 			(xy 250.19 38.1) (xy 245.11 38.1)
@@ -304,6 +410,26 @@
 		)
 		(uuid "a6c645c7-6d7c-405f-9241-461fae18e4e7")
 	)
+	(bus
+		(pts
+			(xy 173.99 114.3) (xy 168.91 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b109bf97-2d45-4606-b119-0b6a277e0bd0")
+	)
+	(bus
+		(pts
+			(xy 173.99 78.74) (xy 105.41 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b31b14aa-46fb-4203-a29d-69209ce957be")
+	)
 	(wire
 		(pts
 			(xy 123.19 92.71) (xy 123.19 97.79)
@@ -313,6 +439,26 @@
 			(type default)
 		)
 		(uuid "b4cb3f28-594b-44f5-9fa8-ee5e0f752119")
+	)
+	(bus
+		(pts
+			(xy 91.44 106.68) (xy 101.6 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be980941-794f-4b38-9d25-42693b34b81e")
+	)
+	(bus
+		(pts
+			(xy 101.6 106.68) (xy 101.6 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d11e3a05-8e47-483f-b6f9-08335cc47c0c")
 	)
 	(wire
 		(pts
@@ -333,6 +479,72 @@
 			(type default)
 		)
 		(uuid "dbf84b3c-ca58-442b-96ae-63db11d67669")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 95.25 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15ada1dc-5de3-420c-8e48-160ec5558d58")
+		(property "Reference" "#PWR036"
+			(at 95.25 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 95.25 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 95.25 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a44c6504-7d07-4cbc-9728-f94cdc0ce283")
+		)
+		(instances
+			(project "hwboard-bike-computer"
+				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -564,6 +776,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "SENSORS_{I2C}{I2C}" bidirectional
+			(at 91.44 160.02 0)
+			(uuid "d0669094-3d4d-4481-879c-75a0cb5e20dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_{DD}" input
+			(at 91.44 148.59 0)
+			(uuid "f5ce243c-4335-4dd6-9d01-15458a145aca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
