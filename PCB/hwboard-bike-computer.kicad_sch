@@ -270,6 +270,12 @@
 		(color 0 0 0 0)
 		(uuid "36c3a279-9712-4332-8fa1-b7edd2f51384")
 	)
+	(junction
+		(at 173.99 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "907c30fb-1e82-434d-875c-0f498aa3e487")
+	)
 	(bus
 		(pts
 			(xy 101.6 125.73) (xy 173.99 125.73)
@@ -289,6 +295,16 @@
 			(type default)
 		)
 		(uuid "08be2c03-c646-4748-bc3d-0f4dd55731a5")
+	)
+	(bus
+		(pts
+			(xy 180.34 78.74) (xy 173.99 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12cba68f-054b-400a-985b-a159b18cc24a")
 	)
 	(wire
 		(pts
@@ -392,6 +408,16 @@
 	)
 	(bus
 		(pts
+			(xy 180.34 50.8) (xy 180.34 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e9d8a3a-b8bb-4b14-bf15-011d404901e5")
+	)
+	(bus
+		(pts
 			(xy 91.44 160.02) (xy 105.41 160.02)
 		)
 		(stroke
@@ -399,6 +425,16 @@
 			(type default)
 		)
 		(uuid "914a4082-2e00-44e0-825a-baaba1750b29")
+	)
+	(bus
+		(pts
+			(xy 168.91 50.8) (xy 180.34 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cfd56dd-cc96-4592-a7b1-d5c761f0c1cb")
 	)
 	(wire
 		(pts
@@ -1002,6 +1038,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "POWER_{I2C}{I2C}" bidirectional
+			(at 168.91 50.8 0)
+			(uuid "ec6e7772-99d5-43d2-86c0-582ac2e67c18")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

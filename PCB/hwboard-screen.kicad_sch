@@ -1250,6 +1250,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TSC2046IRGVR\nResistive IC"
+		(exclude_from_sim no)
+		(at 111.252 159.258 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b180a361-226d-4f02-8f70-7df338af59b5")
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x40")
 		(at 201.93 88.9 0)

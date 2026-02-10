@@ -1361,6 +1361,42 @@
 		(at 91.44 96.52)
 		(uuid "95ae85c2-5956-443a-8dbf-c81041b5a819")
 	)
+	(bus_entry
+		(at 109.22 99.06)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09b995c8-21cb-49b6-b021-7dad498ee32d")
+	)
+	(bus_entry
+		(at 109.22 96.52)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "298f8440-41af-43f4-b480-ec0d743543d1")
+	)
+	(bus_entry
+		(at 144.78 86.36)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8aba05c0-300e-42fe-9521-e0791fb2ddcc")
+	)
+	(bus_entry
+		(at 144.78 83.82)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daf36074-e842-4d0f-8a45-06e77298b754")
+	)
 	(wire
 		(pts
 			(xy 260.35 58.42) (xy 265.43 58.42)
@@ -1443,6 +1479,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 88.9) (xy 162.56 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f2a871e-0cc5-4aea-9411-97cef54546ca")
+	)
+	(wire
+		(pts
 			(xy 220.98 63.5) (xy 220.98 58.42)
 		)
 		(stroke
@@ -1513,6 +1559,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 86.36) (xy 162.56 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6106f163-2b60-4f5e-9086-617fc16b868e")
+	)
+	(wire
+		(pts
 			(xy 107.95 58.42) (xy 115.57 58.42)
 		)
 		(stroke
@@ -1520,6 +1576,16 @@
 			(type default)
 		)
 		(uuid "61786429-2d63-4904-acbd-d91e66d49061")
+	)
+	(wire
+		(pts
+			(xy 91.44 101.6) (xy 106.68 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62e92e55-2464-4fd7-9ed6-7b28e6557d58")
 	)
 	(wire
 		(pts
@@ -1551,6 +1617,16 @@
 		)
 		(uuid "75aba09e-e11a-4ab5-a69f-dffb1fcf3984")
 	)
+	(bus
+		(pts
+			(xy 144.78 83.82) (xy 144.78 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c294972-3b07-4a94-8148-92ffeed9066c")
+	)
 	(wire
 		(pts
 			(xy 73.66 118.11) (xy 73.66 115.57)
@@ -1560,6 +1636,16 @@
 			(type default)
 		)
 		(uuid "7cafcab7-525f-4547-b663-9124e2dbbe0c")
+	)
+	(wire
+		(pts
+			(xy 91.44 99.06) (xy 106.68 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86ae6d23-af83-4e42-bd81-1e0c0455e805")
 	)
 	(wire
 		(pts
@@ -1621,6 +1707,16 @@
 		)
 		(uuid "a48ba66b-f872-4b31-9dba-4ead225134c6")
 	)
+	(bus
+		(pts
+			(xy 142.24 83.82) (xy 144.78 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5c40f2f-84d8-4397-a74f-edfbac689533")
+	)
 	(wire
 		(pts
 			(xy 228.6 90.17) (xy 228.6 95.25)
@@ -1671,6 +1767,16 @@
 		)
 		(uuid "b5bd6a0d-36a2-4f4c-82de-38d1df141608")
 	)
+	(bus
+		(pts
+			(xy 110.49 96.52) (xy 109.22 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb6f1e58-d900-4fb9-a349-87feacc13be1")
+	)
 	(wire
 		(pts
 			(xy 76.2 132.08) (xy 76.2 118.11)
@@ -1710,6 +1816,16 @@
 			(type default)
 		)
 		(uuid "c8280ae5-f1fc-4be1-940c-6671f06bed46")
+	)
+	(bus
+		(pts
+			(xy 109.22 96.52) (xy 109.22 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9ac8db6-6a6a-45e0-8c69-e5b1f407efb6")
 	)
 	(wire
 		(pts
@@ -1831,6 +1947,46 @@
 		)
 		(uuid "fd4051f4-e744-4cda-87b8-4dbac18a17ba")
 	)
+	(label "POWER_{I2C}.SCL"
+		(at 93.98 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "479a5b1f-7f02-4e24-8458-db9f62795825")
+	)
+	(label "POWER_{I2C}.SDA"
+		(at 93.98 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "492aec05-7950-4d31-8f11-68b0b22c3056")
+	)
+	(label "POWER_{I2C}.SCL"
+		(at 161.29 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "965d174c-5004-488d-8820-2e5b210cabf7")
+	)
+	(label "POWER_{I2C}.SDA"
+		(at 161.29 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c254b186-339e-493a-9f8f-4213bdf284ba")
+	)
 	(hierarchical_label "V_{CHARG}"
 		(shape input)
 		(at 107.95 58.42 180)
@@ -1841,6 +1997,17 @@
 			(justify right)
 		)
 		(uuid "44b4342d-78c0-4e25-ab6e-4dcf24656da9")
+	)
+	(hierarchical_label "POWER_{I2C}{I2C}"
+		(shape bidirectional)
+		(at 142.24 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4bc0146b-e1ad-452f-b227-c20c6aa23ded")
 	)
 	(hierarchical_label "V_{BATT}"
 		(shape bidirectional)
@@ -1874,6 +2041,17 @@
 			(justify left)
 		)
 		(uuid "d74c50b1-bc5b-4cef-9aaf-18331736281c")
+	)
+	(hierarchical_label "POWER_{I2C}{I2C}"
+		(shape bidirectional)
+		(at 110.49 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e13a8411-ed72-40e4-b589-1ff110738bcb")
 	)
 	(symbol
 		(lib_id "power:GND")
