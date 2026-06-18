@@ -6,13 +6,15 @@
 
 This project is a KiCad hardware design for a custom printed circuit board (PCB) that powers a modern open-source bike computer, inspired by [Pi Zero Bikecomputer](https://github.com/hishizuka/pizero_bikecomputer).
 
-It enables you to build a feature-rich cycling computer with GPS, sensors, and offline maps, using a Raspberry Pi Compute Module 0 (CM0) as the main processor.
+It enables you to build a feature-rich cycling computer with GPS, sensors, and offline maps, using an **STM32H743** microcontroller as the main processor and an **nRF54L** for Bluetooth Low Energy connectivity with a companion mobile app.
 
 ---
 
 # 📦 Features
 - Modular design for easy assembly and customization
-- Compatible with Raspberry Pi CM0 ecosystem
+- Powered by STM32H743 microcontroller for low-power, real-time performance
+- nRF54L BLE module for smartphone connectivity
+- Companion mobile app for ride sync and offline map transfer
 - Supports GPS, ANT+ sensors, I2C sensors, and more
 - Real-time display of maps, navigation, and sensor data
 - Open-source software and hardware
@@ -20,9 +22,9 @@ It enables you to build a feature-rich cycling computer with GPS, sensors, and o
 ---
 
 ## 🧠 CPU
-- **Main Processor:** Raspberry Pi Compute Module 0 (CM0)
-- Runs Linux (Raspberry Pi OS Trixie recommended)
-- Supports Python, PyQt6, GPSd, and CircuitPython libraries
+- **Main Processor:** STMicroelectronics **STM32H743** (ARM Cortex-M7 @ 480 MHz)
+- Real-time embedded firmware for low-power, responsive operation
+- Rich peripheral set: TFT controller (LTDC), DMA2D, multiple UART/SPI/I2C
 
 ---
 
@@ -33,11 +35,18 @@ It enables you to build a feature-rich cycling computer with GPS, sensors, and o
 
 ---
 
+## 📶 Connectivity
+- **BLE Module:** Nordic Semiconductor **nRF54L** (Bluetooth 5.4 LE)
+- Companion mobile app for ride data synchronization
+- Offline map transfer from smartphone to bike computer
+- Over-the-air (OTA) firmware updates
+
+---
+
 ## 📡 GNSS (GPS)
 - Module : STMicroelectronics **TESEO-LIV3R**
-- UART GPS module (via GPSd) and I2C GPS supported
-- Positioning via GPS or Android app (GadgetBridge)
-- Offline map support (OSM raster tiles, .mbtile)
+- UART GPS module with GPSd-compatible protocol
+- Offline map support (OSM raster tiles, .mbtile, transferred via companion app)
 - Course navigation, climb detection, cuesheet, overlays (heatmap/weather)
 
 ---
@@ -45,7 +54,7 @@ It enables you to build a feature-rich cycling computer with GPS, sensors, and o
 ## 🧭 Sensors
 - **ANT+ Sensors:** Heart rate, speed, cadence, power, light, environment
 - **I2C Sensors:** Barometric altimeter, accelerometer, magnetometer, light sensor
-- **Note:** ANT+ sensors require USB dongle
+- **Note:** ANT+ connectivity handled via dedicated receiver module
 
 ---
 
@@ -97,9 +106,9 @@ More to come in the coming months for the first phase of production.
 ---
 
 ## 📚 Resources
+- [STM32H743 Reference Manual](https://www.st.com/en/microcontrollers-microprocessors/stm32h743.html)
+- [nRF54L Product Page](https://www.nordicsemi.com/Products/nRF54L)
 - [Pi Zero Bikecomputer GitHub](https://github.com/hishizuka/pizero_bikecomputer)
-- [Hardware Installation Guide](https://github.com/hishizuka/pizero_bikecomputer/blob/master/doc/hardware_installation.md)
-- [Software Installation Guide](https://github.com/hishizuka/pizero_bikecomputer/blob/master/doc/software_installation.md)
 - [KiBot CI/CD Documentation](KIBOT_CICD.md)
 
 ---
