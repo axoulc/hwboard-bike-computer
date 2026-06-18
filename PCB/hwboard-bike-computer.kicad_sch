@@ -1239,7 +1239,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "f0c14f95-fee4-4713-9e00-229c734ced8a")
-		(property "Sheetname" "ANT+"
+		(property "Sheetname" "BLE + ANT+"
 			(at 129.54 141.5284 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1250,7 +1250,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "hwboard-ant.kicad_sch"
+		(property "Sheetfile" "hwboard-ble-ant.kicad_sch"
 			(at 129.54 177.1146 0)
 			(show_name no)
 			(do_not_autoplace no)
