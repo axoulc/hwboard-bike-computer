@@ -295,35 +295,9 @@
 		(color 0 0 0 0)
 		(uuid "36c3a279-9712-4332-8fa1-b7edd2f51384")
 	)
-	(junction
-		(at 173.99 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "907c30fb-1e82-434d-875c-0f498aa3e487")
-	)
 	(bus
 		(pts
-			(xy 101.6 125.73) (xy 173.99 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03c1174c-7bd3-4728-8b4e-3c4e7394c0c4")
-	)
-	(bus
-		(pts
-			(xy 173.99 125.73) (xy 173.99 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08be2c03-c646-4748-bc3d-0f4dd55731a5")
-	)
-	(bus
-		(pts
-			(xy 180.34 78.74) (xy 173.99 78.74)
+			(xy 105.41 78.74) (xy 180.34 78.74)
 		)
 		(stroke
 			(width 0)
@@ -350,16 +324,6 @@
 			(type default)
 		)
 		(uuid "3dab2731-80a2-4c51-9b4f-7f47574aaa6c")
-	)
-	(bus
-		(pts
-			(xy 168.91 91.44) (xy 173.99 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "45ea2efe-5843-4f66-b53c-50e93cd9d3ec")
 	)
 	(wire
 		(pts
@@ -393,16 +357,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 104.14) (xy 116.84 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "622612a2-473d-4f5d-8ef6-16f83df0ffbb")
-	)
-	(wire
-		(pts
 			(xy 250.19 35.56) (xy 250.19 38.1)
 		)
 		(stroke
@@ -420,16 +374,6 @@
 			(type default)
 		)
 		(uuid "7e2b5c0a-1239-4de9-9b87-28eecc0400b1")
-	)
-	(bus
-		(pts
-			(xy 173.99 91.44) (xy 173.99 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88cff598-0bbe-40ab-b32c-3bdd4ca80be6")
 	)
 	(bus
 		(pts
@@ -470,76 +414,6 @@
 			(type default)
 		)
 		(uuid "a6c645c7-6d7c-405f-9241-461fae18e4e7")
-	)
-	(bus
-		(pts
-			(xy 173.99 114.3) (xy 168.91 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b109bf97-2d45-4606-b119-0b6a277e0bd0")
-	)
-	(bus
-		(pts
-			(xy 173.99 78.74) (xy 105.41 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b31b14aa-46fb-4203-a29d-69209ce957be")
-	)
-	(wire
-		(pts
-			(xy 123.19 92.71) (xy 123.19 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4cb3f28-594b-44f5-9fa8-ee5e0f752119")
-	)
-	(bus
-		(pts
-			(xy 91.44 106.68) (xy 101.6 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be980941-794f-4b38-9d25-42693b34b81e")
-	)
-	(bus
-		(pts
-			(xy 101.6 106.68) (xy 101.6 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d11e3a05-8e47-483f-b6f9-08335cc47c0c")
-	)
-	(wire
-		(pts
-			(xy 116.84 106.68) (xy 129.54 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db05154f-36d3-45cb-b8b0-27aad524e056")
-	)
-	(wire
-		(pts
-			(xy 123.19 97.79) (xy 129.54 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbf84b3c-ca58-442b-96ae-63db11d67669")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -697,162 +571,6 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 116.84 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37204b33-4f30-41b0-9d5e-7a641c730740")
-		(property "Reference" "#PWR02"
-			(at 116.84 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 116.84 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 116.84 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4d58c43a-26bc-4f36-acd0-6f2c40e1fb41")
-		)
-		(instances
-			(project "hwboard-bike-computer"
-				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 123.19 92.71 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eb21d971-9cf0-4399-8919-a83a1759c124")
-		(property "Reference" "#PWR01"
-			(at 123.19 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 123.19 87.63 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 123.19 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 123.19 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 123.19 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "25eedf5b-7c02-49ac-958f-f39b5aabc7cf")
-		)
-		(instances
-			(project "hwboard-bike-computer"
-				(path "/8c0f76b9-ee42-4bcf-bb95-09772e367402"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(sheet
 		(at 52.07 142.24)
 		(size 39.37 34.29)
@@ -920,8 +638,8 @@
 		)
 	)
 	(sheet
-		(at 129.54 86.36)
-		(size 39.37 33.02)
+		(at 125.73 91.44)
+		(size 50.8 68.58)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -936,7 +654,7 @@
 		)
 		(uuid "2eeec114-113a-4fee-bbbb-7327b1475a37")
 		(property "Sheetname" "CPU"
-			(at 129.54 85.6484 0)
+			(at 125.73 90.7284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -947,7 +665,8 @@
 			)
 		)
 		(property "Sheetfile" "hwboard-cpu.kicad_sch"
-			(at 129.54 119.9646 0)
+			(at 125.73 160.6046 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -957,9 +676,9 @@
 				(justify left top)
 			)
 		)
-		(pin "3V3_{OUT}" output
-			(at 129.54 106.68 180)
-			(uuid "1151e7d5-7517-41a5-afa2-d8e33dc8f5e4")
+		(pin "SERIAL_{GNSS}{TX RX}" bidirectional
+			(at 125.73 96.52 180)
+			(uuid "00e12c6e-6deb-4cda-ba00-5cb2fe29e795")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -967,19 +686,9 @@
 				(justify left)
 			)
 		)
-		(pin "I2C_{BUS}{I2C}" bidirectional
-			(at 168.91 91.44 0)
-			(uuid "f0b2df4c-be7e-4897-8536-1933c9d86b1b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "5V_{IN}" input
-			(at 129.54 97.79 180)
-			(uuid "49f8f19d-f584-4bac-ba12-8109221f8b7a")
+		(pin "GNSS_PPS" input
+			(at 125.73 99.06 180)
+			(uuid "fc0fe4dc-d3b9-4a78-bd3a-015fb501de91")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -987,9 +696,139 @@
 				(justify left)
 			)
 		)
-		(pin "SPI_{BUS}{SPI}" bidirectional
-			(at 168.91 102.87 0)
-			(uuid "e1ce86d3-5102-4044-b3d7-cb3e09831294")
+		(pin "GNSS_RESET_N" output
+			(at 125.73 101.6 180)
+			(uuid "c0b65f1d-0b48-43ae-8d50-c6e94098fa2e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GNSS_EN" output
+			(at 125.73 104.14 180)
+			(uuid "fa8cd5c2-2751-4663-8bb6-cda3aaf2de16")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GNSS_EXTINT" output
+			(at 125.73 106.68 180)
+			(uuid "e4c960f1-5bec-459e-af5b-b4f788f6d073")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GNSS_ANT_EN" output
+			(at 125.73 109.22 180)
+			(uuid "1f6c5b68-0ce3-4943-8c0c-7997e765c4d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GNSS_ANT_FAULT" input
+			(at 125.73 111.76 180)
+			(uuid "a44c0e4c-fd01-46c3-a0c0-9757afe08fa5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IMU_INT1" input
+			(at 125.73 116.84 180)
+			(uuid "97b44020-c57b-4918-8423-457f8fe053f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "IMU_INT2" input
+			(at 125.73 119.38 180)
+			(uuid "cbda0111-e4ac-4947-8b10-a027141d91b7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BARO_INT" input
+			(at 125.73 121.92 180)
+			(uuid "076493ce-1f76-40a3-84df-83ed9826b62b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MAG_DRDY" input
+			(at 125.73 124.46 180)
+			(uuid "d2b7f35f-bf6e-4aae-9d87-a9e6a0e2be08")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TOUCH_INT" input
+			(at 125.73 129.54 180)
+			(uuid "700d3197-71e5-4e41-98fb-d987402243d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TOUCH_RESET" output
+			(at 125.73 132.08 180)
+			(uuid "d53bb22c-c773-4596-b71e-e725539f3b7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CHG_INT" input
+			(at 125.73 137.16 180)
+			(uuid "3ba78f09-d269-41d3-9713-9e44b7ea27e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FUEL_ALRT" input
+			(at 125.73 139.7 180)
+			(uuid "7b272e3d-883f-49c2-8b02-f48cfb0a4ada")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LCD_{SPI}{CS SCK MISO MOSI}" bidirectional
+			(at 176.53 101.6 0)
+			(uuid "e8ecce67-cee6-43fc-bed8-8e6b7d0bed1b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -997,9 +836,159 @@
 				(justify right)
 			)
 		)
-		(pin "UART_{BUS}{SERIAL}" bidirectional
-			(at 168.91 114.3 0)
-			(uuid "edb03264-1317-4f06-9026-ea6baaaaa01d")
+		(pin "LCD_DC" output
+			(at 176.53 104.14 0)
+			(uuid "002ab4bb-08ab-4450-bf06-e42c79c69688")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LCD_RESET" output
+			(at 176.53 106.68 0)
+			(uuid "8abd43d2-ea84-4e7e-a221-5f8290b366d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LCD_TE" input
+			(at 176.53 109.22 0)
+			(uuid "5be42b17-dd87-411b-ab4d-adfdab081a09")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LCD_BL_PWM" output
+			(at 176.53 111.76 0)
+			(uuid "d6c84137-10b3-4e4e-a320-808730f1d3c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LCD_BL_EN" output
+			(at 176.53 114.3 0)
+			(uuid "7b6c3370-561a-449c-99f1-da335484dbd5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NRF_{SPI}{CS SCK MISO MOSI}" bidirectional
+			(at 176.53 119.38 0)
+			(uuid "f4c85a44-c3d7-4e42-8bdd-54d4eeb66240")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NRF_IRQ" input
+			(at 176.53 121.92 0)
+			(uuid "5f318513-fe88-482c-9e25-a5bc664bb1bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NRF_RESET" output
+			(at 176.53 124.46 0)
+			(uuid "d15cce99-ba1a-44c4-9a0c-3d4f5fa018cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NRF_BOOT_DFU" output
+			(at 176.53 127 0)
+			(uuid "88088848-eff2-4608-8d3d-e1b0074a1edd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NRF_READY_BUSY" input
+			(at 176.53 129.54 0)
+			(uuid "6319c200-1d13-418d-ab2c-3c9f3598d68a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SDMMC1{CK CMD D0 D1 D2 D3}" bidirectional
+			(at 176.53 134.62 0)
+			(uuid "1bb49655-dd22-41ed-9d8e-b8ed02590173")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SD_PWR_EN" output
+			(at 176.53 137.16 0)
+			(uuid "e9d52a44-10ed-4e1f-8a80-93e66b3a63da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SD_WP" input
+			(at 176.53 139.7 0)
+			(uuid "a8789361-0b2e-49de-9307-34ec7fe33b26")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB_{FS}{DM DP}" bidirectional
+			(at 176.53 144.78 0)
+			(uuid "e195145e-b358-4e40-a46c-7fefaf6bb1e5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OCTOSPI1{CLK NCS IO0 IO1 IO2 IO3}" bidirectional
+			(at 176.53 147.32 0)
+			(uuid "2fd7151f-3a0c-49ee-8e97-3e6d730a9205")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_{BUS}{SCL SDA}" bidirectional
+			(at 176.53 156.21 0)
+			(uuid "7b723d7b-7f29-473e-bf6f-7919f0116c67")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1224,7 +1213,7 @@
 		)
 	)
 	(sheet
-		(at 129.54 142.24)
+		(at 121.92 177.14)
 		(size 39.37 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1240,7 +1229,7 @@
 		)
 		(uuid "f0c14f95-fee4-4713-9e00-229c734ced8a")
 		(property "Sheetname" "BLE + ANT+"
-			(at 129.54 141.5284 0)
+			(at 121.92 176.4284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1251,7 +1240,7 @@
 			)
 		)
 		(property "Sheetfile" "hwboard-ble-ant.kicad_sch"
-			(at 129.54 177.1146 0)
+			(at 121.92 212.0146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
